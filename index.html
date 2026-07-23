@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaiec</title>
+<link rel="icon" type="image/png" href="vaiec.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen">
+<div class="flex min-h-screen">
+<main class="flex-1 flex flex-col relative">
+
+<div class="flex-1 flex items-center justify-center px-4 pt-20 pb-6">
+<div class="w-full max-w-3xl">
+
+<h1 id="heading" class="text-center text-3xl md:text-4xl font-semibold text-white mb-8">
+What can I help with?
+</h1>
+
+<div id="resultContainer" style="display:none;">
+<div class="result-toolbar">
+<div class="toolbar-title">Response</div>
+
+<div class="toolbar-actions">
+<button id="copyBtn" class="toolbar-btn" title="Copy">
+Copy
+</button>
+
+<button id="voiceBtn" class="toolbar-btn" title="Read Aloud">
+🔊 Listen
+</button>
+</div>
+</div>
+
+<div id="result" class="result-card"></div>
+</div>
+
+</div>
+</div>
+
+<div class="w-full px-4 pb-8 flex flex-col items-center gap-3">
+<div class="search-wrapper">
+
+<div class="search-box w-full rounded-2xl p-4">
+<textarea
+id="searchInput"
+rows="1"
+placeholder="Ask anything"
+class="search-input w-full text-base outline-none px-2 py-2"></textarea>
+
+<div class="flex items-center justify-between mt-3">
+
+<div class="flex items-center gap-1 text-sm">
+
+<button class="chip p-2 rounded-lg" title="Attach">
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 17.98 8.83l-8.58 8.57a2 2 0 1 1-2.83-2.83l8.49-8.48"/>
+</svg>
+</button>
+
+<button class="chip px-3 py-1.5 rounded-full flex items-center gap-1.5">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="12" cy="12" r="10"/>
+<path d="M2 12h20"/>
+<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+</svg>
+Deep Search
+</button>
+
+<button class="chip px-3 py-1.5 rounded-full flex items-center gap-1.5">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<path d="M9 18h6"/>
+<path d="M10 22h4"/>
+<path d="M12 2a7 7 0 0 0-4 12.7c.6.4 1 1 1 1.7v.6h6v-.6c0-.7.4-1.3 1-1.7A7 7 0 0 0 12 2z"/>
+</svg>
+Reason
+</button>
+
+<button class="chip p-2 rounded-lg" title="More">
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="5" cy="12" r="1"/>
+<circle cx="12" cy="12" r="1"/>
+<circle cx="19" cy="12" r="1"/>
+</svg>
+</button>
+
+</div>
+
+<button id="submitBtn" class="send-btn w-10 h-10 rounded-full flex items-center justify-center" title="Send">
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 19V5"/>
+<path d="m5 12 7-7 7 7"/>
+</svg>
+</button>
+
+</div>
+</div>
+
+</div>
+
+<p class="text-xs text-[#6b6b6b]">
+Double-check responses for accuracy before using the information.
+</p>
+
+</div>
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
