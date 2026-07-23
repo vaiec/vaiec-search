@@ -9,11 +9,11 @@
 # ***`Screenshot's`***
 ***`First Interface`***
 
-<img src="https://i.ibb.co/V0Wxhg94/Screenshot-from-2026-07-23-15-16-16.png" >
+<img src="https://i.ibb.co/V0Wxhg94/Screenshot-from-2026-07-23-15-16-16.png" width=450px >
 
 ***`Second Interface`***
 
-<img src="https://i.ibb.co/1wzztC4/Screenshot-from-2026-07-23-15-19-36.png" >
+<img src="https://i.ibb.co/1wzztC4/Screenshot-from-2026-07-23-15-19-36.png" width=450px >
 
 # ***`Contributing`***
 
