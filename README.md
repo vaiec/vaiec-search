@@ -6,6 +6,14 @@
 
 > Built to provide a clean, fast, and easy-to-use experience while keeping the code open and customizable.
 
+# ***`Screenshot's`***
+***`First Interface`***
+
+<img src="https://i.ibb.co/V0Wxhg94/Screenshot-from-2026-07-23-15-16-16.png" >
+
+***`Second Interface`***
+
+<img src="https://i.ibb.co/1wzztC4/Screenshot-from-2026-07-23-15-19-36.png" >
 
 # ***`Contributing`***
 
