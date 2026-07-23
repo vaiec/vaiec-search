@@ -30,7 +30,7 @@ async function fetchWikiSummary(query) {
 
   speechSynthesis.cancel();
   speaking = false;
-  voiceBtn.innerHTML = "🔊 Listen";
+  voiceBtn.innerHTML = "Listen";
 
   heading.style.display = "none";
   resultContainer.style.display = "block";
@@ -122,7 +122,7 @@ voiceBtn.onclick = () => {
   if (speaking) {
     speechSynthesis.cancel();
     speaking = false;
-    voiceBtn.innerHTML = "🔊 Listen";
+    voiceBtn.innerHTML = "Listen";
     return;
   }
 
@@ -150,12 +150,12 @@ voiceBtn.onclick = () => {
 
   speech.onstart = () => {
     speaking = true;
-    voiceBtn.innerHTML = "⏹ Stop";
+    voiceBtn.innerHTML = "Stop";
   };
 
   speech.onend = () => {
     speaking = false;
-    voiceBtn.innerHTML = "🔊 Listen";
+    voiceBtn.innerHTML = "Listen";
   };
 
   speechSynthesis.speak(speech);
